@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>聊天室</title>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="main.js"></script>
+<style>
+body {
+	font-size: 12px;
+}
+.chatbox {
+	width: 320px;
+}
+.history {
+	height: 155px;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	overflow-y: scroll;
+	line-height: 15px;
+}
+
+input {
+	border-radius: 5px;
+	border: solid 1px #ccc;
+}
+.ctl {
+	margin-top: 5px;
+}
+</style>
+</head>
+<body>
+<div class="chatbox">
+
+	<div class="history">
+
+	</div>
+	<div class="ctl">
+	<input id="msg" type="text">
+	发送给：<input id="to" type="text">
+	<input type="button" id="sendbtn" value="发送">
+	</div>
+
+</div>
+
+</body>
+</html>
